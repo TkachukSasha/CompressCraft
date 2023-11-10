@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BF1D50AE-B308-444F-A045-626984559FF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{851A1E88-156D-47A9-9121-1D063A4F621F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{D4B46C72-0FBB-46EC-B5BB-A52B28A3BC8D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{781352F4-AEC3-4BF2-8A95-4603584A2E7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{E896935D-DCE9-4598-A706-63F8FCACAB5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Core.Abstractions", "src\Core\CompressCraft.Core.Abstractions\CompressCraft.Core.Abstractions.csproj", "{DB957831-C5C4-409E-951F-6D7879D86880}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encodings", "Encodings", "{E53A2B30-9AC4-4A23-8920-FD29CEF85559}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{747E2CA2-4C79-4338-9038-317DC8C47F7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Statistics", "Statistics", "{987F1005-9C17-4CF5-87B5-FF463578B0B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Modules.Encodings.Domain", "src\Modules\Encodings\CompressCraft.Modules.Encodings.Domain\CompressCraft.Modules.Encodings.Domain.csproj", "{7D1C2B7C-7922-4B8A-B2FC-500CC79ACCF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{BFEA3FA0-08E2-4631-AEE9-541D3C0D0347}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Encodings", "Encodings", "{F8DCF569-CD92-4531-8842-699C0725470B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Modules.Encodings.UnitTests", "tests\Modules\Encodings\CompressCraft.Modules.Encodings.UnitTests\CompressCraft.Modules.Encodings.UnitTests.csproj", "{B448C40B-E7C0-4641-B1D4-0089CBA5634F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Modules.Encodings.ArchitectureTests", "tests\Modules\Encodings\CompressCraft.Modules.Encodings.ArchitectureTests\CompressCraft.Modules.Encodings.ArchitectureTests.csproj", "{16267741-A390-4F51-A21A-BFEBDBA48B93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB957831-C5C4-409E-951F-6D7879D86880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB957831-C5C4-409E-951F-6D7879D86880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB957831-C5C4-409E-951F-6D7879D86880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB957831-C5C4-409E-951F-6D7879D86880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1C2B7C-7922-4B8A-B2FC-500CC79ACCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1C2B7C-7922-4B8A-B2FC-500CC79ACCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1C2B7C-7922-4B8A-B2FC-500CC79ACCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1C2B7C-7922-4B8A-B2FC-500CC79ACCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B448C40B-E7C0-4641-B1D4-0089CBA5634F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B448C40B-E7C0-4641-B1D4-0089CBA5634F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B448C40B-E7C0-4641-B1D4-0089CBA5634F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B448C40B-E7C0-4641-B1D4-0089CBA5634F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16267741-A390-4F51-A21A-BFEBDBA48B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16267741-A390-4F51-A21A-BFEBDBA48B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16267741-A390-4F51-A21A-BFEBDBA48B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16267741-A390-4F51-A21A-BFEBDBA48B93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4B46C72-0FBB-46EC-B5BB-A52B28A3BC8D} = {BF1D50AE-B308-444F-A045-626984559FF3}
+		{781352F4-AEC3-4BF2-8A95-4603584A2E7E} = {BF1D50AE-B308-444F-A045-626984559FF3}
+		{E896935D-DCE9-4598-A706-63F8FCACAB5D} = {BF1D50AE-B308-444F-A045-626984559FF3}
+		{DB957831-C5C4-409E-951F-6D7879D86880} = {781352F4-AEC3-4BF2-8A95-4603584A2E7E}
+		{E53A2B30-9AC4-4A23-8920-FD29CEF85559} = {D4B46C72-0FBB-46EC-B5BB-A52B28A3BC8D}
+		{747E2CA2-4C79-4338-9038-317DC8C47F7F} = {D4B46C72-0FBB-46EC-B5BB-A52B28A3BC8D}
+		{987F1005-9C17-4CF5-87B5-FF463578B0B6} = {D4B46C72-0FBB-46EC-B5BB-A52B28A3BC8D}
+		{7D1C2B7C-7922-4B8A-B2FC-500CC79ACCF4} = {E53A2B30-9AC4-4A23-8920-FD29CEF85559}
+		{BFEA3FA0-08E2-4631-AEE9-541D3C0D0347} = {851A1E88-156D-47A9-9121-1D063A4F621F}
+		{F8DCF569-CD92-4531-8842-699C0725470B} = {BFEA3FA0-08E2-4631-AEE9-541D3C0D0347}
+		{B448C40B-E7C0-4641-B1D4-0089CBA5634F} = {F8DCF569-CD92-4531-8842-699C0725470B}
+		{16267741-A390-4F51-A21A-BFEBDBA48B93} = {F8DCF569-CD92-4531-8842-699C0725470B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F70C736-FA0F-4F92-A6F1-AC8B139EFEA9}
+	EndGlobalSection
+EndGlobal
