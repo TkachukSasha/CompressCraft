@@ -5,7 +5,7 @@ public class LayerTests : BaseArchitectureTest
     [Fact]
     public void Domain_Should_NotHaveDependencyOnOther_Projects()
     {
-        var result = Types.InAssembly(DomainAssembly)
+        var result = Types.InAssembly(Assembly)
             .Should()
             .NotHaveDependencyOnAny()
             .GetResult();

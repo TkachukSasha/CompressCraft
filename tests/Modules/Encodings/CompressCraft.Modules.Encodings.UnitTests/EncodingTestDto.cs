@@ -1,4 +1,4 @@
-﻿using CompressCraft.Modules.Encodings.Domain;
+﻿using CompressCraft.Modules.Encodings.Core.Domain;
 
 namespace CompressCraft.Modules.Encodings.UnitTests;
 

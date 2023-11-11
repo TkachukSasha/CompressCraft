@@ -1,5 +1,5 @@
 ﻿using CompressCraft.Core.Abstractions.Abstractions.Errors;
-using CompressCraft.Modules.Encodings.Domain;
+using CompressCraft.Modules.Encodings.Core.Domain;
 
 namespace CompressCraft.Modules.Encodings.UnitTests.Specifications;
 

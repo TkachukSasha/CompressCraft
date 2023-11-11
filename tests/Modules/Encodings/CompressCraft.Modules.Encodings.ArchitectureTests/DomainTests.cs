@@ -7,7 +7,7 @@ public class DomainTests : BaseArchitectureTest
     [Fact]
     public void Builders_Should_Implement_IBuilder_Interface()
     {
-        var result = Types.InAssembly(DomainAssembly)
+        var result = Types.InAssembly(Assembly)
             .That()
             .ImplementInterface(typeof(IBuilder))
             .Should()
@@ -20,7 +20,7 @@ public class DomainTests : BaseArchitectureTest
     [Fact]
     public void Builders_Should_BeSealed()
     {
-        var result = Types.InAssembly(DomainAssembly)
+        var result = Types.InAssembly(Assembly)
             .That()
             .ImplementInterface(typeof(IBuilder))
             .Should()

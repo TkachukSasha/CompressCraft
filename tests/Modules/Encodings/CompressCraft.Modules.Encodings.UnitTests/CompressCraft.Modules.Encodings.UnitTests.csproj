@@ -24,7 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\src\Modules\Encodings\CompressCraft.Modules.Encodings.Domain\CompressCraft.Modules.Encodings.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Core\CompressCraft.Core.Abstractions\CompressCraft.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\..\src\Modules\Encodings\CompressCraft.Modules.Encodings.Core\CompressCraft.Modules.Encodings.Core.csproj" />
   </ItemGroup>
 
 </Project>

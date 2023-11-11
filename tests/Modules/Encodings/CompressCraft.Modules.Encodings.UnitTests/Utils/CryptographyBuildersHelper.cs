@@ -1,5 +1,5 @@
-﻿using CompressCraft.Modules.Encodings.Domain;
-using CompressCraft.Modules.Encodings.Domain.Builders;
+﻿using CompressCraft.Modules.Encodings.Core.Domain;
+using CompressCraft.Modules.Encodings.Core.Domain.Builders;
 
 namespace CompressCraft.Modules.Encodings.UnitTests.Utils;
 
