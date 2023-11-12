@@ -28,11 +28,11 @@ jobs:
             - name: Build
               run: dotnet build --no-restore
 
-            - name: DomainEncodingsTest
-              run: dotnet test ./tests/Modules/Encodings/CompressCraft.Modules.Encodings.UnitTests/CompressCraft.Modules.Encodings.UnitTests.csproj --no-build --verbosity normal --collect:"XPlat Code Coverage"
+            - name: DomainTests
+              run: dotnet test ./tests/Core/CompressCraft.Domain.UnitTests/CompressCraft.Domain.UnitTests.csproj --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
-            - name: ArchitectureEncodingsTest
-              run: dotnet test ./tests/Modules/Encodings/CompressCraft.Modules.Encodings.ArchitectureTests/CompressCraft.Modules.Encodings.ArchitectureTests.csproj --no-build --verbosity normal --collect:"XPlat Code Coverage"
+            - name: ApplicationTests
+              run: dotnet test ./tests/Core/CompressCraft.Application.UnitTests/CompressCraft.Application.UnitTests.csproj --no-build --verbosity normal --collect:"XPlat Code Coverage"
 
             - name: Install ReportGenerator
               run: dotnet tool install -g dotnet-reportgenerator-globaltool
