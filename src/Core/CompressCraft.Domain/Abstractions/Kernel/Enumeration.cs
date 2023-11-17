@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection;
 
 namespace CompressCraft.Domain.Abstractions.Kernel;
 
@@ -13,8 +14,10 @@ public abstract class Enumeration<TEnum> : IEquatable<Enumeration<TEnum>>
         Name = name;
     }
 
+    [Column("value")]
     public string Value { get; protected init; }
 
+    [Column("name")]
     public string Name { get; protected init; }
 
     #region methods

@@ -1,4 +1,5 @@
-﻿using CompressCraft.Domain.Abstractions.Errors;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CompressCraft.Domain.Abstractions.Errors;
 using CompressCraft.Domain.Abstractions.Kernel;
 
 namespace CompressCraft.Domain.Encodings;
@@ -15,8 +16,16 @@ public sealed class EncodingTable : Entity<EncodingTableId>
         Elements = elements;
     }
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    private EncodingTable()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    {
+    }
+
+    [Column("encoding_language_id")]
     public string EncodingLanguageId { get; }
 
+    [Column("elements")]
     public IEnumerable<EncodingTableElement> Elements { get; }
 
     public static Result<EncodingTable> Init(

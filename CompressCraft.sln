@@ -11,17 +11,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{781352F4-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{E896935D-DCE9-4598-A706-63F8FCACAB5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Domain", "src\Core\CompressCraft.Domain\CompressCraft.Domain.csproj", "{E597E497-104A-4C76-A3FB-A675A91EC2A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Domain", "src\Core\CompressCraft.Domain\CompressCraft.Domain.csproj", "{E597E497-104A-4C76-A3FB-A675A91EC2A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Application", "src\Core\CompressCraft.Application\CompressCraft.Application.csproj", "{CBA43E39-692D-4F4A-8D19-B5D150ADA9EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Application", "src\Core\CompressCraft.Application\CompressCraft.Application.csproj", "{CBA43E39-692D-4F4A-8D19-B5D150ADA9EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Infrastructure", "src\External\CompressCraft.Infrastructure\CompressCraft.Infrastructure.csproj", "{94791DC1-6079-4050-B5A9-1B3A96B187CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Infrastructure", "src\External\CompressCraft.Infrastructure\CompressCraft.Infrastructure.csproj", "{94791DC1-6079-4050-B5A9-1B3A96B187CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{509CE57C-D568-4520-B8B0-271F9B41234E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Domain.UnitTests", "tests\Core\CompressCraft.Domain.UnitTests\CompressCraft.Domain.UnitTests.csproj", "{8D9D85C5-746D-4642-89A1-9A7AC65CE15B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Domain.UnitTests", "tests\Core\CompressCraft.Domain.UnitTests\CompressCraft.Domain.UnitTests.csproj", "{8D9D85C5-746D-4642-89A1-9A7AC65CE15B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Application.UnitTests", "tests\Core\CompressCraft.Application.UnitTests\CompressCraft.Application.UnitTests.csproj", "{84394568-21FC-4913-ADB6-CCA88BF96F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Application.UnitTests", "tests\Core\CompressCraft.Application.UnitTests\CompressCraft.Application.UnitTests.csproj", "{84394568-21FC-4913-ADB6-CCA88BF96F89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9C030DA0-7762-4799-B1CC-58F967C88BAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Shared.Abstractions", "src\Shared\CompressCraft.Shared.Abstractions\CompressCraft.Shared.Abstractions.csproj", "{A92E4675-4340-4168-A474-62397E161310}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Shared", "src\Shared\CompressCraft.Shared\CompressCraft.Shared.csproj", "{0EED42DE-ED4B-4F5A-85B0-13F8807B4052}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompressCraft.Api", "src\External\CompressCraft.Api\CompressCraft.Api.csproj", "{AAA5FE54-0C0F-496F-807A-B74CDD30B966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompressCraft.Application.IntegrationTests", "tests\Core\CompressCraft.Application.IntegrationTests\CompressCraft.Application.IntegrationTests.csproj", "{3228396A-DD62-42EE-8072-997A96C2CA98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +59,22 @@ Global
 		{84394568-21FC-4913-ADB6-CCA88BF96F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84394568-21FC-4913-ADB6-CCA88BF96F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84394568-21FC-4913-ADB6-CCA88BF96F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A92E4675-4340-4168-A474-62397E161310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A92E4675-4340-4168-A474-62397E161310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A92E4675-4340-4168-A474-62397E161310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A92E4675-4340-4168-A474-62397E161310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EED42DE-ED4B-4F5A-85B0-13F8807B4052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EED42DE-ED4B-4F5A-85B0-13F8807B4052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EED42DE-ED4B-4F5A-85B0-13F8807B4052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EED42DE-ED4B-4F5A-85B0-13F8807B4052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA5FE54-0C0F-496F-807A-B74CDD30B966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA5FE54-0C0F-496F-807A-B74CDD30B966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA5FE54-0C0F-496F-807A-B74CDD30B966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA5FE54-0C0F-496F-807A-B74CDD30B966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3228396A-DD62-42EE-8072-997A96C2CA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3228396A-DD62-42EE-8072-997A96C2CA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3228396A-DD62-42EE-8072-997A96C2CA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3228396A-DD62-42EE-8072-997A96C2CA98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +88,11 @@ Global
 		{509CE57C-D568-4520-B8B0-271F9B41234E} = {851A1E88-156D-47A9-9121-1D063A4F621F}
 		{8D9D85C5-746D-4642-89A1-9A7AC65CE15B} = {509CE57C-D568-4520-B8B0-271F9B41234E}
 		{84394568-21FC-4913-ADB6-CCA88BF96F89} = {509CE57C-D568-4520-B8B0-271F9B41234E}
+		{9C030DA0-7762-4799-B1CC-58F967C88BAB} = {BF1D50AE-B308-444F-A045-626984559FF3}
+		{A92E4675-4340-4168-A474-62397E161310} = {9C030DA0-7762-4799-B1CC-58F967C88BAB}
+		{0EED42DE-ED4B-4F5A-85B0-13F8807B4052} = {9C030DA0-7762-4799-B1CC-58F967C88BAB}
+		{AAA5FE54-0C0F-496F-807A-B74CDD30B966} = {E896935D-DCE9-4598-A706-63F8FCACAB5D}
+		{3228396A-DD62-42EE-8072-997A96C2CA98} = {509CE57C-D568-4520-B8B0-271F9B41234E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F70C736-FA0F-4F92-A6F1-AC8B139EFEA9}

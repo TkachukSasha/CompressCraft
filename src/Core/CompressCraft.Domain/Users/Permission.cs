@@ -1,4 +1,5 @@
-﻿using CompressCraft.Domain.Abstractions.Errors;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using CompressCraft.Domain.Abstractions.Errors;
 using CompressCraft.Domain.Abstractions.Kernel;
 using CompressCraft.Domain.Users.ValueObjects;
 
@@ -14,14 +15,21 @@ public sealed class Permission : Entity<PermissionId>
         PermissionName = permissionName;
     }
 
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    private Permission()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    {
+    }
+
+    [Column("permission_name")]
     public PermissionName PermissionName { get; }
 
-    public static Result<Permission> Init(PermissionName permissionName)
+    public static Result<Permission> Init(string permissionName)
     {
-        if (string.IsNullOrWhiteSpace(permissionName.Value))
+        if (string.IsNullOrWhiteSpace(permissionName))
             return Result.Failure<Permission>(UsersErrors.PermissionErrors.PermissionNameMustBeProvide);
 
-        return new Permission(new PermissionId(), permissionName);
+        return new Permission(new PermissionId(), new PermissionName(permissionName));
     }
 }
 

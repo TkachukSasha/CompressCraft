@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Shared\CompressCraft.Shared\CompressCraft.Shared.csproj" />
     <ProjectReference Include="..\CompressCraft.Domain\CompressCraft.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Encodings\" />
   </ItemGroup>
 
 </Project>

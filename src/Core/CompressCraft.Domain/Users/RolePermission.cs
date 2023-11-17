@@ -1,4 +1,6 @@
-﻿namespace CompressCraft.Domain.Users;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CompressCraft.Domain.Users;
 
 public sealed class RolePermission
 {
@@ -11,9 +13,17 @@ public sealed class RolePermission
         PermissionId = permissionId;
     }
 
-    public string RoleId { get; set; }
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    private RolePermission()
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+    {
+    }
 
-    public int PermissionId { get; set; }
+    [Column("role_id")]
+    public string RoleId { get; }
+
+    [Column("permission_id")]
+    public int PermissionId { get; }
 
     public static RolePermission Init(
         string roleId,

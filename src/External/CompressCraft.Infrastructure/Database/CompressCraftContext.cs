@@ -20,7 +20,11 @@ public sealed class CompressCraftContext : DbContext
 
     public DbSet<RolePermission> RolePermissions => Set<RolePermission>();
 
-    public CompressCraftContext(DbContextOptions<CompressCraftContext> options) : base(options) { }
+    public DbSet<UserRole> UserRoles => Set<UserRole>();
+
+    public CompressCraftContext(
+        DbContextOptions<CompressCraftContext> options
+        ) : base(options) { }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
